@@ -19,5 +19,13 @@ public class TheArrays {
         for (int i = colors.length - 1; i >= 0; i--) {
             System.out.println(colors[i]);
         }
+        // method 3 for loop
+        System.out.println("Method 4\n");
+
+        for (String color : colors) {
+            System.out.println(color);
+        }
+        // method 4  using stream
+        Arrays.stream(colors).forEach(System.out::println);
     }
 }
