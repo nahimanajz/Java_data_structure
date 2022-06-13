@@ -2,6 +2,7 @@ package maharishi;
 
 import java.util.Arrays;
 
+
 public class ReverseArray {
     public static void main(String[] args) {
         int[] numbers = new int[] {12, 3, 4,5 ,7};
