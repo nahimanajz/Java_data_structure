@@ -1,5 +1,7 @@
 package maharishi;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Arrays;
 
 // LeetCode 1295
@@ -14,6 +16,12 @@ public class NumbersWithEvenDigits {
             }
         }
         System.out.println(count);
+        // shortcut to find length of integer
+        System.out.println(numberOfDigits(7822));
     }
 
+
+     static int numberOfDigits(int number){
+         return (int) Math.log10(number) + 1;
+     } ;
 }
