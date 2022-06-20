@@ -28,5 +28,4 @@ public class InsertionSort {
         arr[currentIndex] = arr[previousIndex];
         arr[previousIndex] = temp;
     }
-
 }
