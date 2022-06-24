@@ -3,6 +3,7 @@ package maharishi.maths;
 public class Prime {
     public static void main(String[] args) {
         System.out.println(isPrime(5));
+
     }
     static boolean isPrime(int n){
         if(n <=1) {
@@ -17,4 +18,6 @@ public class Prime {
         }
        return true;
     }
+
+
 }
