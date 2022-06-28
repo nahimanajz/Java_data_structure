@@ -1,5 +1,5 @@
 package maharishi.maths;
-https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
+//https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
 public class GCD_LCM {
     public static void main(String[] args) {
         System.out.println(gcd(9, 10));
