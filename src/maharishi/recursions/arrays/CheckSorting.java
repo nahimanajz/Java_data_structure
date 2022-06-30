@@ -1,4 +1,4 @@
-package maharishi.recursions.easy;
+package maharishi.recursions.arrays;
 
 public class CheckSorting {
     public static void main(String[] args) {
