@@ -17,6 +17,7 @@ public class FindElement {
     }
 
     private static ArrayList<Integer> findAllIndexes(int[] arr, int target, int index, ArrayList<Integer> list) {
+        // ArrayList<Integer> ANS = if we declare this variable we will return just one index because new array list object will be created for every iteration
      if(index == arr.length) {
          return list;
      }
