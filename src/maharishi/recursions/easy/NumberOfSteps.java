@@ -1,5 +1,5 @@
 package maharishi.recursions.easy;
-
+// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 public class NumberOfSteps {
     static int counter(int number, int steps){
         if (number == 0) {
