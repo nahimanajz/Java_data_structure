@@ -7,6 +7,13 @@ public class Maze {
         System.out.println(maze(3, 3));
         mazePath("", 3,3);
         System.out.println(diagonal("", 3, 3));
+
+        boolean[][] board = {
+                {true, true, true},
+                {true, false, true},
+                {true, true, true}
+        };
+        stopOnLake("", board,0,0);
     }
     static int maze(int row, int col){
         if(row == 1 || col == 1){
@@ -44,5 +51,28 @@ public class Maze {
         }
         return list;
 
+    }
+
+    /**
+     *
+     * @param path
+     * @param board and middle cell is treated as lake thereby it is set to false and excution has to stop right there
+     * @param row
+     * @param col
+     */
+    static void stopOnLake(String path, boolean board[][], int row, int col) {
+        if(row == board.length -1 && col == board[0].length -1){
+            System.out.println(path);
+            return;
+        }
+        if(!board[row][col]){
+            return;
+        }
+        if (col < board[0].length -1){
+            stopOnLake(path + "R", board, row, col +1);
+        }
+        if(row < board.length -1){
+            stopOnLake(path + "D", board, row+1, col);
+        }
     }
 }
