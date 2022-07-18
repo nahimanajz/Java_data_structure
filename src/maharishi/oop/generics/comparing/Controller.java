@@ -1,6 +1,7 @@
 package maharishi.oop.generics.comparing;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Controller {
     public static void main(String[] args) {
@@ -12,12 +13,12 @@ public class Controller {
         Student krishnah = new Student(9, 96.2f);
 
         Student[] list = {janvier,rahul, runaka, karan, arpit, krishnah };
+        Arrays.sort(list, (o1, o2) -> -(int) (o1.marks - o2.marks));
         System.out.println(Arrays.toString(list));
-        Arrays.sort(list);
 
-        if(janvier.compareTo(rahul) < 0){
-            System.out.println("Janvier has less marks");
-        }
+//        if(janvier.compareTo(rahul) < 0){
+//            System.out.println("Janvier has less marks");
+//        }
 
     }
 }

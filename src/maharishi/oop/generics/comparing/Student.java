@@ -1,6 +1,6 @@
 package maharishi.oop.generics.comparing;
 
-public class Student implements Comparable<Student>{
+public class Student{
     int rollno;
     float marks;
 
@@ -8,7 +8,7 @@ public class Student implements Comparable<Student>{
         this.rollno = rollno;
         this.marks = marks;
     }
-
+/*
     @Override
     public int compareTo(Student o) {
         int diff = (int) (this.marks - o.marks);
@@ -16,7 +16,7 @@ public class Student implements Comparable<Student>{
         // if diff<1: means o is bigger
         return -diff;
     }
-
+ */
     @Override
     public String toString() {
         return  marks + "";
