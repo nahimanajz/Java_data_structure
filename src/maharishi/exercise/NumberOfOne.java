@@ -12,6 +12,6 @@ public class NumberOfOne {
         return countOnes(n/2, ones);
     }
     public static void main(String[] args) {
-        System.out.println(countOnes(10, 0));
+        System.out.println(countOnes(143, 0));
     }
 }
