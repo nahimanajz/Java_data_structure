@@ -22,8 +22,23 @@ public class GetPrimes {
         }
         System.out.println(sum);
     }
+    static int checkPrimes(int n){
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+              return 0;
+            }
+        }
+        return 1;
+    }
 
     public static void main(String[] args) {
-        getPrimes();
+        //getPrimes();
+        int[] arr = {1,2,3,4,5,6};
+        for (int i = 0; i <arr.length; i++) {
+            if(checkPrimes(arr[i]) == 1) {
+
+            }
+        }
+        System.out.println(checkPrimes(7));
     }
 }
