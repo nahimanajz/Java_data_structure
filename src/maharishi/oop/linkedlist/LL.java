@@ -1,7 +1,7 @@
 package maharishi.oop.linkedlist;
 
 public class LL {
-    private Node head;
+    public Node head;
     private Node tail;
     private int size;
     public LL(){
@@ -26,6 +26,19 @@ public class LL {
        tail.next = node;
        tail = node;
        size++;
+    }
+    public void insertRec(int val,int index){
+        head = insertRecur(val, index, head);
+    }
+    public Node insertRecur(int val, int index, Node node){
+        if(index == 0){
+            Node temp = new Node(val, node);
+            size++;
+           // System.out.println(temp.next);
+            return temp;
+        }
+        node.next = insertRecur(val, index-1, node.next);
+        return node;
     }
     public void insert(int value, int index){
         if(index == size){

@@ -21,5 +21,9 @@ public class Controller {
 
         System.out.println(list.delete(2));
         list.display();
+        //RECURSIVE
+      list.insertRec(30,3);
+      list.display();
+
     }
 }
