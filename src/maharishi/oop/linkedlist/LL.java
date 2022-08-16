@@ -107,6 +107,63 @@ public class LL {
         }
         System.out.println("End");
     }
+    // recursive reverse
+    public Node reverse(Node node){
+        if(node == tail){
+            head = node;
+            return head;
+        }
+        reverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+        return tail;
+    }
+    public void iterativeReverse(){
+        if (size < 2) {
+            return;
+        }
+        Node previousNode = null;
+        Node present = head;
+        Node nextNode = present.next;
+
+        while(present != null){
+            present.next = previousNode;
+            previousNode = present;
+            present = nextNode;
+            if (nextNode != null) {
+                nextNode = nextNode.next;
+            }
+
+        }
+        head = previousNode;
+
+    }
+    public boolean isPalindrome(Node head){
+        Node mid = middleNode(head);
+        Node headSecond = reverse(mid);
+        Node rereversed = headSecond;
+        // compare both halves
+        while(head !=null && headSecond != null){
+            if(head.value != headSecond.value){
+                break;
+            }
+            head = head.next;
+            headSecond = headSecond.next;
+        }
+        reverse(rereversed);
+        return head == null || headSecond == null;
+
+    }
+    public Node middleNode(Node head){
+        Node s = head;
+        Node f = head;
+        while(f != null && f.next != null){
+            s = s.next;
+            f = f.next.next;
+        }
+        return s;
+    }
     public Node find(int value){
         Node node = head;
         while( node != null){

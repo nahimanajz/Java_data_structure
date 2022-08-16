@@ -3,7 +3,7 @@ package maharishi.recursions.easy;
 public class CountZeroes {
 
     public static void main(String[] args) {
-        System.out.println(counter(0, 0));
+        System.out.println(counter(10120, 0));
     }
 
     private static int counter(int number, int nberOfZeroes) {

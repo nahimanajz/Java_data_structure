@@ -3,9 +3,9 @@ package maharishi.oop.linkedlist;
 
 public class MergeTwoList {
     public static  LL mergeLists(LL first, LL second){
-        Node head1 = first.head;
-        Node head2 = second.head;
-
+      //  LL.Node head1 = first.head;
+        //LL.Node head2 = second.head;
+    return null;
     }
     public static void main(String[] args) {
         // let's benefit from inserting element sing remove duplicates class

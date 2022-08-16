@@ -2,7 +2,7 @@ package maharishi.recursions.easy;
 
 public class Factorial {
     public static void main(String[] args) {
-        System.out.println(factors(5));
+        System.out.println(factors(3));
     }
 
     private static int factors(int n) {
