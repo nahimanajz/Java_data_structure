@@ -2,7 +2,7 @@ package maharishi.sorting;
 
 import java.util.Arrays;
 // Bubble sort compares two respective elements in array
-public class BubbleSort {
+public class  BubbleSort {
     public static void main(String[] args) {
         int[] arr = {5,4, 2, 1};
         System.out.println(Arrays.toString(sort(arr)));
